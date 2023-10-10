@@ -1,7 +1,6 @@
 $('form').on('submit', function(e){
     e.preventDefault();
-    adicionaTarefa();
-    
+    adicionaTarefa();    
 });
 
 function corAleatoria() {
@@ -12,8 +11,14 @@ function corAleatoria() {
 
 function adicionaTarefa() {
     const inputNovaTarefa = $('#inputTarefa').val();
-        const novaTarefa = $(`<li>${inputNovaTarefa}</li>`);
+        const novaTarefa = $(`<li class="tarefaItem">${inputNovaTarefa}</li>`);
         $(novaTarefa).css('background-color',corAleatoria());
         novaTarefa.appendTo('ul');
+        addListener()
 }
 
+function addListener() {
+    $(".tarefaItem").click(function () {
+        $(this).css('text-decoration', 'line-through');
+    })
+}
