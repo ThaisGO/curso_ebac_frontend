@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+
+    <title>EBAC Form</title>
+</head>
+<body>
+    <section id="bg">
+        <div class="formulario">
+            <h1>EBAC Cadastro</h1>
+            <form id="formEbac">
+                <input type="text" name="nome" id="nome" placeholder="nome">
+                <input type="email" name="email" id="email" placeholder="e-mail">
+                <input type="tel" name="telefone" id="telefone" placeholder="telefone">
+                <input type="text" name="cpf" id="cpf" placeholder="CPF">
+                <input type="text" name="endereco" id="endereco" placeholder="endereço">
+                <input type="text" name="cep" id="cep" placeholder="CEP">
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
