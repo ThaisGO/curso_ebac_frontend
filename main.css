@@ -1,0 +1,21 @@
+.formulario {
+    max-width: 450px;
+    border: 1px solid #6f42c1;
+    border-radius: 8px;
+    padding: 10px 8px;
+}
+
+.formulario img {
+    height: 30px;
+
+    width: 30px;
+}
+
+.formulario h2 {
+    color:#6f42c1;
+    text-align: center;
+}
+
+.formulario button {
+    margin-top: 10px;
+}
